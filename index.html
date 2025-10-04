@@ -3,54 +3,171 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <!-- وصف الموقع لتحسين الظهور في محركات البحث -->
   <meta name="description" content="طموح العليمي — متجر متخصص في بيع منتجات التصميم الرقمي: هويات بصرية، قوالب تطبيقات، صور ستوك، وقوالب كانفا جاهزة للتحميل.">
   <title>طموح العليمي | تصاميم رقمية احترافية</title>
   
-  <!-- ربط خط عربي أنيق من Google Fonts -->
+  <!-- Open Graph -->
+  <meta property="og:title" content="طموح العليمي | تصاميم رقمية احترافية">
+  <meta property="og:description" content="ابدأ مشروعك بتصميم يليق بطموحك. منتجات رقمية فورية، احترافية، وقابلة للتخصيص.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;600;700&display=swap" rel="stylesheet">
   
-  <!-- ربط ملف الأنماط (CSS) -->
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- رأس الصفحة: يعرض اسم المتجر وشعاره -->
-  <header>
+  <!-- شريط التنقل -->
+  <nav class="navbar">
     <div class="container">
-      <h1>طموح العليمي</h1>
-      <p>نُبدع ما لا تراه العين... حتى تراه!</p>
+      <a href="#" class="logo">طموح العليمي</a>
+      <ul class="nav-links">
+        <li><a href="#home">الرئيسية</a></li>
+        <li><a href="#products">المنتجات</a></li>
+        <li><a href="#apps">التطبيقات</a></li>
+        <li><a href="#about">من نحن</a></li>
+        <li><a href="#portfolio">أعمالنا</a></li>
+        <li><a href="#contact">اتصل بنا</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- البطل -->
+  <header id="home" class="hero-header">
+    <div class="container">
+      <h1>نُبدع ما لا تراه العين... حتى تراه!</h1>
+      <p>ابدأ مشروعك بتصميم يليق بطموحك</p>
+      <a href="#products" class="btn btn-primary">استعرض المنتجات</a>
     </div>
   </header>
 
-  <!-- المحتوى الرئيسي -->
-  <main class="container">
-    <!-- قسم ترحيبي يشرح فائدة المتجر -->
-    <section class="hero">
-      <h2>ابدأ مشروعك بتصميم يليق بطموحك</h2>
-      <p>منتجات رقمية جاهزة للتحميل — فورية، احترافية، وقابلة للتخصيص.</p>
-    </section>
+  <!-- المنتجات -->
+  <section id="products" class="section">
+    <div class="container">
+      <h2 class="section-title">منتجاتنا الرقمية</h2>
+      <p class="section-subtitle">فورية، احترافية، وقابلة للتخصيص</p>
+      <div class="products" id="products-container">
+        <!-- سيتم ملؤه بواسطة JavaScript -->
+      </div>
+    </div>
+  </section>
 
-    <!-- قسم المنتجات: سيتم ملؤه تلقائيًا بواسطة JavaScript -->
-    <section class="products" id="products-container">
-      <!-- 
-        ملاحظة: لا تكتب المنتجات هنا يدويًا.
-        سيتم إنشاؤها ديناميكيًا من ملف script.js
-        لتسهيل التعديل لاحقًا دون لمس HTML.
-      -->
-    </section>
-  </main>
+  <!-- التطبيقات -->
+  <section id="apps" class="section bg-light">
+    <div class="container">
+      <h2 class="section-title">تطبيقاتنا الجاهزة</h2>
+      <p class="section-subtitle">واجهات تطبيقات احترافية — جاهزة للتطوير أو الاستخدام الفوري</p>
+      <div class="products" id="apps-container">
+        <!-- سيتم ملؤه بواسطة JavaScript -->
+      </div>
+    </div>
+  </section>
 
-  <!-- تذييل الصفحة: معلومات الاتصال وحقوق الملكية -->
+  <!-- من نحن -->
+  <section id="about" class="section bg-light">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-text">
+          <h2 class="section-title">من نحن؟</h2>
+          <p>طموح العليمي هو علامة سعودية متخصصة في تقديم حلول التصميم الرقمي للشركات الناشئة والعلامات التجارية الطموحة.</p>
+          <p>نؤمن أن التصميم ليس مجرد شكل، بل هو رسالة، هوية، وتجربة. لذلك نحرص على أن يكون كل تصميم نقدمه انعكاسًا حقيقيًا لرؤية عميلنا.</p>
+          <ul class="values-list">
+            <li><i class="fas fa-check-circle"></i> جودة احترافية</li>
+            <li><i class="fas fa-check-circle"></i> تسليم فوري</li>
+            <li><i class="fas fa-check-circle"></i> دعم فني دائم</li>
+          </ul>
+        </div>
+        <div class="about-image">
+          <img src="https://placehold.co/600x400/2563eb/white?text=هوية+بصرية" alt="تصميم هوية بصرية" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- معرض الأعمال -->
+  <section id="portfolio" class="section">
+    <div class="container">
+      <h2 class="section-title">أعمالنا المميزة</h2>
+      <p class="section-subtitle">تصاميم أحدثت فرقًا</p>
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <img src="https://placehold.co/600x400/10b981/white?text=تطبيق+صحي" alt="تصميم تطبيق صحي" loading="lazy">
+        </div>
+        <div class="portfolio-item">
+          <img src="https://placehold.co/600x400/ef4444/white?text=تطبيق+تسوق" alt="هوية بصرية لعلامة تجارية" loading="lazy">
+        </div>
+        <div class="portfolio-item">
+          <img src="https://placehold.co/600x400/f97316/white?text=قوالب+كانفا" alt="قوالب كانفا احترافية" loading="lazy">
+        </div>
+        <div class="portfolio-item">
+          <img src="https://placehold.co/600x400/7e22ce/white?text=واجهات+Figma" alt="واجهات تطبيقات فيجما" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- آراء العملاء -->
+  <section class="section bg-light">
+    <div class="container">
+      <h2 class="section-title">ما يقوله عملاؤنا</h2>
+      <div class="testimonials">
+        <div class="testimonial">
+          <img src="https://placehold.co/100x100/e2e8f0/64748b?text=👤" alt="صورة العميل أحمد" class="testimonial-avatar">
+          <p>"الهوية البصرية التي صمموها غيرت نظرتنا لعلامتنا تمامًا! شكرًا طموح."</p>
+          <h4>أحمد السعدي</h4>
+          <div class="rating">★★★★★</div>
+        </div>
+        <div class="testimonial">
+          <img src="https://placehold.co/100x100/e2e8f0/64748b?text=👤" alt="صورة العميلة ليلى" class="testimonial-avatar">
+          <p>"قوالب كانفا جاهزة ووفرت لي ساعات من العمل. أنصح بها بشدة!"</p>
+          <h4>ليلى القحطاني</h4>
+          <div class="rating">★★★★★</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- اتصل بنا -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title">اتصل بنا</h2>
+      <p class="section-subtitle">نحن هنا لمساعدتك</p>
+      <div class="contact-options">
+        <a href="https://wa.me/966500000000" class="contact-btn" target="_blank" rel="noopener">
+          <i class="fab fa-whatsapp"></i>
+          <span>واتساب</span>
+        </a>
+        <a href="mailto:contact@tamoo7al3laymy.com" class="contact-btn">
+          <i class="fas fa-envelope"></i>
+          <span>البريد الإلكتروني</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- التذييل -->
   <footer>
     <div class="container">
-      <p>&copy; 2025 طموح العليمي. جميع الحقوق محفوظة.</p>
-      <p>للاستفسار: <a href="mailto:contact@tamoo7al3laymy.com">contact@tamoo7al3laymy.com</a></p>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h3>طموح العليمي</h3>
+          <p>نُبدع ما لا تراه العين... حتى تراه!</p>
+        </div>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-behance"></i></a>
+        </div>
+      </div>
+      <p class="copyright">&copy; 2025 طموح العليمي. جميع الحقوق محفوظة.</p>
     </div>
   </footer>
 
-  <!-- ربط ملف الجافاسكربت -->
   <script src="script.js"></script>
 </body>
-    </html>
+  </html>
